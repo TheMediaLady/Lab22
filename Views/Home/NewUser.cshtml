@@ -1,0 +1,45 @@
+﻿@model Lab21.Models.NewUserModel
+@{
+    ViewBag.Title = "NewUser";
+
+
+    <h2><i>It is Our Pleasure to Serve You!!</i></h2>
+
+
+
+    <h5> Please complete the form to register!</h5>
+
+
+
+    <form style="background-image: url('../../Content/TanGradient.jpg');" method="post">
+
+        <fieldset>
+
+            <p>
+                <b>Enter Last Name:</b> &nbsp; &nbsp;<input type="text" name="LastName" placeholder="Last Name" required>
+            </p> <p>
+                <b>Enter First Name:</b> &nbsp; &nbsp;<input type="text" name="FirstName" placeholder="First Name" required>
+            </p> <p>
+                <b>Enter Your Email:</b>&nbsp; &nbsp;<input type="email" name="Email" placeholder="Email Address" required>
+            </p> <p>
+                <b>Enter Telephone:</b> &nbsp; &nbsp;<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="Telephone" placeholder="111-222-3456" required>
+            </p><p>
+
+                <b>Enter Your Password:</b> &nbsp; &nbsp;<input type="password" name="Password" placeholder="Password" minlength="8" maxlength="10" required />
+            </p><p>
+                <b>Re-Enter Your Password:</b> &nbsp; &nbsp;<input type="password" name="ConfirmPassword" placeholder="ConfirmPassword" minlength="8" maxlength="10" required />
+            </p>
+
+            <button type="submit">Create User</button>
+
+
+        </fieldset>
+    </form>
+
+    <br />
+    <br />
+    
+}
+   
+
+
